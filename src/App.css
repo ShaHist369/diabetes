@@ -1,0 +1,215 @@
+.cercle{
+	border-radius: 50%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	content: " ";
+}
+.cercleTitle{
+    transform: translateY(-100px)}
+.orangeGrad{
+	background: radial-gradient(rgba(255,255,255,0.2), rgba(255,165,0,0.5));
+}
+.firstC{
+  content: '';
+  display: grid;
+  justify-content: center;
+  align-content:center;
+  width: 10px;
+  height: 10px;
+animation: cercles1 2s ease 0s infinite;
+  z-index: 3;
+}
+.secondC{
+  animation: cercles1 2s ease-in-out 1s infinite;
+}
+.secondPageClass{
+
+}
+.changeCurrentPageUp{
+	position: absolute;
+	top:-768px;
+	animation: slideCurrentPageUp 1s ease-in-out 0s 1;
+}
+.changeNewPageUp{
+	position: absolute;
+	top:0px;
+	animation: slideNewPageUp 1s ease-in-out 0s 1;
+}
+.changeCurrentPageDown{
+	position: absolute;
+	top:-768px;
+	animation: slideCurrentPageDown 1s ease-in-out 0s 1;
+}
+.changeNewPageDown{
+	position: absolute;
+	top:0px;
+	animation: slideNewPageDown 1s ease-in-out 0s 1;
+}
+
+.input-range{
+	position: absolute;
+	top: 80vh;
+	display: grid;
+	justify-content: center;
+	width:100vw;
+
+}
+#years{
+	width:60vw;
+	height: 40px;
+}
+.firstPageDot{
+
+}
+.secondPageDot{
+  
+}
+.thirdPageDot{
+  
+}
+
+@keyframes cercles1{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+   98%{
+    width: 100px;
+    height: 100px;
+  }
+    99%{
+    width: 1px;
+    height: 1px;
+  }
+  100%{
+    width:0px;
+    height: 0px;
+  }
+}
+
+@keyframes cercles2{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+   98%{
+    width: 50px;
+    height: 50px;
+  }
+    99%{
+    width: 1px;
+    height: 1px;
+  }
+  100%{
+    width:0px;
+    height: 0px;
+  }
+}
+
+@keyframes cercles3{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+   98%{
+    width: 25px;
+    height: 25px;
+  }
+    99%{
+    width: 1px;
+    height: 1px;
+  }
+  100%{
+    width:0px;
+    height: 0px;
+  }
+}
+
+
+@keyframes slideCurrentPageUp{
+  0%{
+    top:0px;
+  }
+  100%{
+   top:-768px;
+  }
+}
+@keyframes slideNewPageUp{
+  0%{
+    top:768px;
+  }
+  100%{
+   top:0px;
+  }
+}
+@keyframes slideCurrentPageDown{
+  0%{
+    top:0px;
+  }
+  100%{
+   top:768px;
+  }
+}
+@keyframes slideNewPageDown{
+  0%{
+    top:-768px;
+  }
+  100%{
+   top:0px;
+  }
+}
+
+
+
+
+.onRight{
+	position: absolute;
+	left: -1024px;
+	transition: all 1s ease-in-out 0s;
+
+}
+.onCenter{
+	
+	position: absolute;
+	left: 0px;
+	transition: all 1s ease-in-out 0s;
+}
+.onLeft{
+
+	position: absolute;
+	left: 1024px;
+	transition: all 1s ease-in-out 0s;
+
+}
+
+
+
+
+
+
+
+.slideBgRight{
+	position: absolute;
+	animation: slidePageRight 1s ease-in-out 0s 1;
+}
+.slideBgLeft{
+	position: absolute;
+	animation: slidePageLeft 1s ease-in-out 0s 1;
+}
+@keyframes slidePageRight{
+  0%{
+    left:0px;
+  }
+  100%{
+   left:1024px;
+  }
+}
+@keyframes slidePageLeft{
+  0%{
+    left:1024px;
+  }
+  100%{
+   left:0px;
+  }
+}
